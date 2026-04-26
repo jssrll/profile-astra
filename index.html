@@ -12,6 +12,14 @@
 </head>
 <body>
 
+  <!-- LOADING SCREEN -->
+  <div class="loader" id="loader">
+    <div class="loader-inner">
+      <span class="loader-logo">astra</span>
+      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
+    </div>
+  </div>
+
   <!-- CERTIFICATE MODALS -->
   <div class="cert-overlay" id="certOverlay" onclick="closeCert()"></div>
 
@@ -114,7 +122,7 @@
     <div class="hero-bg"></div>
     <div class="container hero-inner">
       <div class="hero-content reveal">
-        <span class="eyebrow">Frontend Developer</span>
+        <span class="eyebrow">I am a <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span></span>
         <h1 class="hero-name"><span class="hero-firstname">Jessrell M.</span><em>Custodio</em></h1>
         <div class="role-ticker">
           <span class="role-item active">Frontend Web Developer</span>
@@ -217,6 +225,88 @@
               <button class="cert-btn" onclick="openCert('cisco-cyber')">Introduction to Cybersecurity</button>
               <button class="cert-btn" onclick="openCert('cisco-hw')">Computer Hardware Basics</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- SKILLS & TOOLS -->
+  <section class="skills-tools section-pad" id="skills">
+    <div class="container skills-tools-grid">
+      <div class="skills-col reveal">
+        <span class="section-label">Skills</span>
+        <h2 class="section-title">What I bring<br /><em>to every project.</em></h2>
+        <div class="skill-bars">
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Frontend Development</span>
+              <span class="skill-pct">85%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="85"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Web Design</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-header">
+              <span class="skill-name">Entrepreneurship</span>
+              <span class="skill-pct">80%</span>
+            </div>
+            <div class="skill-track">
+              <div class="skill-fill" data-width="80"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="tools-col reveal-right">
+        <span class="section-label">Tools</span>
+        <h2 class="section-title">My toolkit<br /><em>for every build.</em></h2>
+        <div class="tools-grid">
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.51 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.49L13.51 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 3v6h6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 13h6M9 17h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <span>VS Code</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 19.5c.5-2 1.8-3.5 3.5-3.5s3 1.5 3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <span>GitHub</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            </div>
+            <span>Vercel / Render</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </div>
+            <span>ImageKit</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H12v5H7.5A2.5 2.5 0 0 1 5 5.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M12 3h4.5a2.5 2.5 0 0 1 0 5H12V3Z" stroke="currentColor" stroke-width="1.8"/><path d="M12 12.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Z" stroke="currentColor" stroke-width="1.8"/><path d="M5 12.5A2.5 2.5 0 0 1 7.5 10H12v5H7.5A2.5 2.5 0 0 1 5 12.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M5 19.5A2.5 2.5 0 0 1 7.5 17H12v2.5A2.5 2.5 0 0 1 9.5 22h-2A2.5 2.5 0 0 1 5 19.5Z" stroke="currentColor" stroke-width="1.8"/></svg>
+            </div>
+            <span>Figma</span>
+          </div>
+          <div class="tool-card">
+            <div class="tool-icon">
+              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <span>Canva</span>
           </div>
         </div>
       </div>
