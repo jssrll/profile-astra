@@ -4,13 +4,86 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Jessrell M. Custodio — Frontend Web Developer & Web Designer. I build fast, clean, and mobile-ready websites for students, small businesses, and local services." />
-  <title>Astra</title>
+  <title>Jessrell M. Custodio — Web Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;500;600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- CERTIFICATE MODALS -->
+  <div class="cert-overlay" id="certOverlay" onclick="closeCert()"></div>
+
+  <div class="cert-modal" id="cert-tesda-agri">
+    <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    <p class="cert-modal-issuer">TESDA Certificate</p>
+    <h3 class="cert-modal-title">Organic Agriculture Production</h3>
+    <div class="cert-modal-img-wrap">
+      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/cert-tesda-agri" alt="Organic Agriculture Production Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="cert-placeholder">Certificate Image</div>
+    </div>
+  </div>
+
+  <div class="cert-modal" id="cert-tesda-msme">
+    <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    <p class="cert-modal-issuer">TESDA Certificate</p>
+    <h3 class="cert-modal-title">Entrepreneurship (MSME)</h3>
+    <div class="cert-modal-img-wrap">
+      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/cert-tesda-msme" alt="Entrepreneurship MSME Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="cert-placeholder">Certificate Image</div>
+    </div>
+  </div>
+
+  <div class="cert-modal" id="cert-cisco-html">
+    <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    <p class="cert-modal-issuer">Cisco Certificate</p>
+    <h3 class="cert-modal-title">HTML Essentials</h3>
+    <div class="cert-modal-img-wrap">
+      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/cert-cisco-html" alt="HTML Essentials Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="cert-placeholder">Certificate Image</div>
+    </div>
+  </div>
+
+  <div class="cert-modal" id="cert-cisco-ai">
+    <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    <p class="cert-modal-issuer">Cisco Certificate</p>
+    <h3 class="cert-modal-title">Introduction to Modern AI</h3>
+    <div class="cert-modal-img-wrap">
+      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/cert-cisco-ai" alt="Introduction to Modern AI Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="cert-placeholder">Certificate Image</div>
+    </div>
+  </div>
+
+  <div class="cert-modal" id="cert-cisco-net">
+    <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    <p class="cert-modal-issuer">Cisco Certificate</p>
+    <h3 class="cert-modal-title">Networking Basics</h3>
+    <div class="cert-modal-img-wrap">
+      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/cert-cisco-net" alt="Networking Basics Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="cert-placeholder">Certificate Image</div>
+    </div>
+  </div>
+
+  <div class="cert-modal" id="cert-cisco-cyber">
+    <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    <p class="cert-modal-issuer">Cisco Certificate</p>
+    <h3 class="cert-modal-title">Introduction to Cybersecurity</h3>
+    <div class="cert-modal-img-wrap">
+      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/cert-cisco-cyber" alt="Introduction to Cybersecurity Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="cert-placeholder">Certificate Image</div>
+    </div>
+  </div>
+
+  <div class="cert-modal" id="cert-cisco-hw">
+    <button class="cert-modal-close" onclick="closeCert()">✕</button>
+    <p class="cert-modal-issuer">Cisco Certificate</p>
+    <h3 class="cert-modal-title">Computer Hardware Basics</h3>
+    <div class="cert-modal-img-wrap">
+      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/cert-cisco-hw" alt="Computer Hardware Basics Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
+      <div class="cert-placeholder">Certificate Image</div>
+    </div>
+  </div>
 
   <!-- NAV -->
   <nav class="nav" id="nav">
@@ -32,7 +105,7 @@
       <a href="#services" class="mobile-link">Services</a>
       <a href="#process" class="mobile-link">Process</a>
       <a href="#contact" class="mobile-link">Contact</a>
-      <a href="#contact" class="mobile-link cta-mobile">Get Started →</a>
+      <a href="#contact" class="mobile-link cta-mobile">Get Started</a>
     </div>
   </nav>
 
@@ -74,7 +147,6 @@
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
@@ -83,7 +155,6 @@
       <span>Scroll</span>
     </div>
   </section>
-
 
   <!-- MICROCOPY STRIP -->
   <div class="microcopy-strip">
@@ -113,7 +184,7 @@
       <div class="about-left reveal">
         <div class="about-avatar">
           <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Profile" alt="Jessrell M. Custodio" class="avatar-photo" />
-          <div class="avatar-badge">Available for Projects</div>
+          <div class="avatar-badge">Jessrell Custodio</div>
         </div>
       </div>
       <div class="about-right reveal-right">
@@ -129,84 +200,24 @@
           </div>
         </div>
         <div class="about-background">
-          <p class="builds-label">Background in:</p>
-          <div class="tag-row">
-            <span class="tag alt">Organic Agriculture Production</span>
-            <span class="tag alt">MSME Operations</span>
+          <p class="builds-label">Certificates</p>
+          <div class="cert-group">
+            <p class="cert-group-label">TESDA</p>
+            <div class="cert-btn-row">
+              <button class="cert-btn" onclick="openCert('tesda-agri')">Organic Agriculture Production</button>
+              <button class="cert-btn" onclick="openCert('tesda-msme')">Entrepreneurship (MSME)</button>
+            </div>
           </div>
-          <p class="builds-note">This helps me understand small business needs on a deeper level.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- VALUE SECTION -->
-  <section class="value section-pad">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">What You Get</span>
-        <h2 class="section-title centered">Everything you need.<br /><em>Nothing you don't.</em></h2>
-      </div>
-      <div class="value-grid reveal">
-        <div class="value-card">
-          <div class="value-icon">⚡</div>
-          <h3>Fast Loading</h3>
-          <p>Pages that load in seconds — keeping visitors from leaving.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">📱</div>
-          <h3>Mobile-Ready</h3>
-          <p>Looks perfect on every device — phone, tablet, or desktop.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">✦</div>
-          <h3>Clean Design</h3>
-          <p>A trusted presence that makes clients feel confident.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">💬</div>
-          <h3>Clear Content</h3>
-          <p>Your services, explained simply — so clients understand immediately.</p>
-        </div>
-        <div class="value-card">
-          <div class="value-icon">🔗</div>
-          <h3>Show Clients</h3>
-          <p>A website you can proudly share to any potential customer.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROBLEM → SOLUTION -->
-  <section class="problem section-pad">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">The Real Problem</span>
-        <h2 class="section-title centered">Where businesses get stuck.<br /><em>How I fix it.</em></h2>
-      </div>
-      <div class="ps-grid reveal">
-        <div class="ps-col problem-col">
-          <div class="ps-header">
-            <span class="ps-badge red">❌ The Problem</span>
+          <div class="cert-group">
+            <p class="cert-group-label">Cisco</p>
+            <div class="cert-btn-row">
+              <button class="cert-btn" onclick="openCert('cisco-html')">HTML Essentials</button>
+              <button class="cert-btn" onclick="openCert('cisco-ai')">Introduction to Modern AI</button>
+              <button class="cert-btn" onclick="openCert('cisco-net')">Networking Basics</button>
+              <button class="cert-btn" onclick="openCert('cisco-cyber')">Introduction to Cybersecurity</button>
+              <button class="cert-btn" onclick="openCert('cisco-hw')">Computer Hardware Basics</button>
+            </div>
           </div>
-          <ul class="ps-list">
-            <li><span class="ps-icon red">✕</span>You don't have a website</li>
-            <li><span class="ps-icon red">✕</span>Your page looks outdated</li>
-            <li><span class="ps-icon red">✕</span>Customers keep asking the same basic questions</li>
-            <li><span class="ps-icon red">✕</span>No online presence means lost trust</li>
-          </ul>
-        </div>
-        <div class="ps-divider">→</div>
-        <div class="ps-col solution-col">
-          <div class="ps-header">
-            <span class="ps-badge green">✓ My Solution</span>
-          </div>
-          <ul class="ps-list">
-            <li><span class="ps-icon green">✓</span>A website that shows your services clearly</li>
-            <li><span class="ps-icon green">✓</span>Answers the most common customer questions</li>
-            <li><span class="ps-icon green">✓</span>Makes it easy for clients to contact you</li>
-            <li><span class="ps-icon green">✓</span>Builds instant trust with every visitor</li>
-          </ul>
         </div>
       </div>
     </div>
@@ -216,25 +227,19 @@
   <section class="services section-pad" id="services">
     <div class="container">
       <div class="reveal">
-        <span class="section-label">Services</span>
         <h2 class="section-title centered">Choose based on<br /><em>your needs and budget.</em></h2>
         <p class="section-sub centered">All websites are mobile-friendly, fast-loading, and cleanly designed.</p>
-      </div>
-
-      <div class="services-note reveal">
-        <span class="note-icon">💡</span>
-        <p><strong>Not sure what you need?</strong> Start with a simple page. Upgrade later.</p>
       </div>
 
       <!-- Use Cases -->
       <div class="use-cases reveal">
         <p class="use-label">Who needs a website?</p>
         <div class="use-grid">
-          <div class="use-item"><span>🎓</span> Students building portfolios</div>
-          <div class="use-item"><span>🏪</span> Small shop owners</div>
-          <div class="use-item"><span>🛠</span> Freelancers offering services</div>
-          <div class="use-item"><span>📅</span> Event organizers</div>
-          <div class="use-item"><span>📍</span> Local service providers</div>
+          <div class="use-item">Students building portfolios</div>
+          <div class="use-item">Small shop owners</div>
+          <div class="use-item">Freelancers offering services</div>
+          <div class="use-item">Event organizers</div>
+          <div class="use-item">Local service providers</div>
         </div>
         <p class="use-conclusion">If you want people to find you online — you need a website.</p>
       </div>
@@ -243,134 +248,55 @@
       <div class="service-cards reveal">
         <div class="service-card">
           <div class="service-tier">Starter</div>
-          <h3 class="service-name">Basic Page</h3>
-          <p class="service-desc">Perfect for getting online fast. One page with everything you need to start.</p>
+          <h3 class="service-name">Static Websites</h3>
+          <p class="service-desc">Clean and simple sites for quick launch. Good for personal pages and small services.</p>
           <ul class="service-features">
-            <li>✓ Single page design</li>
-            <li>✓ Contact section</li>
-            <li>✓ Mobile-friendly</li>
+            <li>✓ Free basic customization</li>
+            <li>✓ Single-page or multi-section layout</li>
+            <li>✓ Mobile-friendly design</li>
             <li>✓ Fast loading</li>
+            <li>✓ Contact section or info display</li>
+            <li>✓ 1 revision included</li>
+            <li>✓ Free deployment guide</li>
           </ul>
-          <div class="service-time">⏱ 2–3 days</div>
+          <div class="service-time">2–4 days</div>
           <a href="#contact" class="btn-service">Start Here</a>
         </div>
         <div class="service-card featured">
           <div class="featured-badge">Most Popular</div>
           <div class="service-tier">Standard</div>
-          <h3 class="service-name">Business Site</h3>
-          <p class="service-desc">Multi-section website to showcase your full services and build trust.</p>
+          <h3 class="service-name">Landing Pages / Microsites</h3>
+          <p class="service-desc">Built for marketing, promos, and getting leads.</p>
           <ul class="service-features">
-            <li>✓ Multi-section layout</li>
-            <li>✓ Services section</li>
-            <li>✓ Contact form</li>
-            <li>✓ Image gallery</li>
-            <li>✓ Google Maps</li>
+            <li>✓ Free full layout customization</li>
+            <li>✓ High-converting structure</li>
+            <li>✓ Call-to-action sections</li>
+            <li>✓ Forms (booking, signup, download)</li>
+            <li>✓ Mobile-optimized design</li>
+            <li>✓ 2 revisions included</li>
+            <li>✓ Basic SEO setup</li>
+            <li>✓ Free deployment support</li>
           </ul>
-          <div class="service-time">⏱ 4–5 days</div>
+          <div class="service-time">3–5 days</div>
           <a href="#contact" class="btn-service featured-btn">Get This</a>
         </div>
         <div class="service-card">
           <div class="service-tier">Premium</div>
-          <h3 class="service-name">Full Portfolio</h3>
-          <p class="service-desc">Complete digital presence with all the extras for standing out.</p>
+          <h3 class="service-name">Web Portals</h3>
+          <p class="service-desc">Full system with user access and advanced features.</p>
           <ul class="service-features">
-            <li>✓ Everything in Standard</li>
-            <li>✓ Social media links</li>
-            <li>✓ Custom navigation</li>
+            <li>✓ Full customization based on your needs</li>
+            <li>✓ User login and dashboard</li>
+            <li>✓ Admin panel controls</li>
+            <li>✓ Database integration</li>
+            <li>✓ Custom features (booking, tracking, etc.)</li>
+            <li>✓ 3 revisions included</li>
+            <li>✓ Basic security setup</li>
             <li>✓ Post-launch support</li>
-            <li>✓ Upgrade-ready</li>
+            <li>✓ Free deployment and setup</li>
           </ul>
-          <div class="service-time">⏱ 5–7 days</div>
+          <div class="service-time">5–10 days</div>
           <a href="#contact" class="btn-service">Let's Talk</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TRUST -->
-  <section class="trust section-pad">
-    <div class="container">
-      <div class="reveal">
-        <span class="section-label">Why Clients Choose Me</span>
-        <h2 class="section-title centered">Results first.<br /><em>Design second.</em></h2>
-      </div>
-      <div class="trust-grid reveal">
-        <div class="trust-card">
-          <div class="trust-num">01</div>
-          <h3>I Respond Fast</h3>
-          <p>You get timely replies and updates throughout the entire build process.</p>
-        </div>
-        <div class="trust-card">
-          <div class="trust-num">02</div>
-          <h3>Simple Pricing</h3>
-          <p>No hidden fees. No confusing packages. Transparent and fair pricing every time.</p>
-        </div>
-        <div class="trust-card">
-          <div class="trust-num">03</div>
-          <h3>Clear Explanations</h3>
-          <p>I explain things in plain language — no technical jargon, no confusion.</p>
-        </div>
-        <div class="trust-card">
-          <div class="trust-num">04</div>
-          <h3>Focus on Results</h3>
-          <p>A pretty website means nothing if it doesn't get you clients. I focus on both.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- FEATURES INCLUDED -->
-  <section class="features section-pad">
-    <div class="container">
-      <div class="features-inner reveal">
-        <div class="features-left">
-          <span class="section-label">What's Included</span>
-          <h2 class="section-title">Every website<br /><em>comes with:</em></h2>
-          <ul class="features-list">
-            <li><span class="f-check">✓</span> Clear homepage</li>
-            <li><span class="f-check">✓</span> Service or product section</li>
-            <li><span class="f-check">✓</span> Contact details</li>
-            <li><span class="f-check">✓</span> Mobile-friendly layout</li>
-            <li><span class="f-check">✓</span> Fast loading speed</li>
-            <li><span class="f-check">✓</span> Simple navigation</li>
-          </ul>
-          <div class="features-optional">
-            <p class="opt-label">Optional add-ons:</p>
-            <div class="opt-tags">
-              <span class="opt-tag">Image Gallery</span>
-              <span class="opt-tag">Google Maps</span>
-              <span class="opt-tag">Social Media Links</span>
-            </div>
-          </div>
-        </div>
-        <div class="features-right">
-          <div class="features-visual">
-            <div class="fv-item">
-              <div class="fv-dot"></div>
-              <div class="fv-bar" style="width:90%"></div>
-              <span>Homepage</span>
-            </div>
-            <div class="fv-item">
-              <div class="fv-dot"></div>
-              <div class="fv-bar" style="width:75%"></div>
-              <span>Services</span>
-            </div>
-            <div class="fv-item">
-              <div class="fv-dot"></div>
-              <div class="fv-bar" style="width:85%"></div>
-              <span>Contact</span>
-            </div>
-            <div class="fv-item">
-              <div class="fv-dot"></div>
-              <div class="fv-bar" style="width:70%"></div>
-              <span>Mobile View</span>
-            </div>
-            <div class="fv-item">
-              <div class="fv-dot"></div>
-              <div class="fv-bar" style="width:95%"></div>
-              <span>Speed Score</span>
-            </div>
-          </div>
         </div>
       </div>
     </div>
@@ -380,7 +306,6 @@
   <section class="process section-pad" id="process">
     <div class="container">
       <div class="reveal">
-        <span class="section-label">How It Works</span>
         <h2 class="section-title centered">From idea to live<br /><em>in days — not weeks.</em></h2>
       </div>
       <div class="process-steps reveal">
@@ -432,13 +357,11 @@
     <div class="container">
       <div class="sb-grid reveal">
         <div class="sb-card speed-card">
-          <div class="sb-icon">⚡</div>
           <h3>Fast Turnaround</h3>
           <div class="sb-stat">2–7 <span>days</span></div>
           <p>Most projects are done in less than a week. You get updates during the entire process so you're never in the dark.</p>
         </div>
         <div class="sb-card budget-card">
-          <div class="sb-icon">💰</div>
           <h3>Affordable Pricing</h3>
           <div class="sb-stat">Fair <span>rates</span></div>
           <p>Perfect for students, startups, and small businesses. You don't need a big budget to get online and start growing.</p>
@@ -458,47 +381,10 @@
     </div>
   </section>
 
-  <!-- FUTURE SUPPORT -->
-  <section class="support section-pad">
-    <div class="container">
-      <div class="support-inner reveal">
-        <div class="support-left">
-          <span class="section-label">After Launch</span>
-          <h2 class="section-title">Your website grows<br /><em>with you.</em></h2>
-          <p>Going live is just the beginning. I'm here for what comes next.</p>
-        </div>
-        <div class="support-right">
-          <div class="support-item">
-            <div class="support-dot">→</div>
-            <div>
-              <h4>Request Updates</h4>
-              <p>Need to change something? I've got you covered after launch.</p>
-            </div>
-          </div>
-          <div class="support-item">
-            <div class="support-dot">→</div>
-            <div>
-              <h4>Add New Sections</h4>
-              <p>Expanding your business? Add new pages or sections anytime.</p>
-            </div>
-          </div>
-          <div class="support-item">
-            <div class="support-dot">→</div>
-            <div>
-              <h4>Upgrade Anytime</h4>
-              <p>Start simple. When you're ready, upgrade to a bigger, better site.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- FINAL CTA -->
   <section class="final-cta" id="contact">
     <div class="container">
       <div class="cta-inner reveal">
-        <span class="section-label light">Start Now</span>
         <h2 class="cta-headline">Message me today.<br /><em>Get online in days.</em></h2>
         <p class="cta-sub">Send your idea. I will turn it into a working page.</p>
         <div class="cta-actions">
@@ -528,11 +414,24 @@
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
         </nav>
-        <p class="footer-copy">© 2025 Jessrell M. Custodio. All rights reserved.</p>
+        <p class="footer-copy">© 2025 Astra. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
+  <script>
+    function openCert(id) {
+      document.getElementById('certOverlay').classList.add('active');
+      document.getElementById('cert-' + id).classList.add('active');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeCert() {
+      document.getElementById('certOverlay').classList.remove('active');
+      document.querySelectorAll('.cert-modal').forEach(function(m) { m.classList.remove('active'); });
+      document.body.style.overflow = '';
+    }
+    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeCert(); });
+  </script>
 </body>
 </html>

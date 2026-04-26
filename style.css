@@ -1256,3 +1256,119 @@ blockquote em { color: var(--accent); font-style: italic; }
 @media (max-width: 400px) {
   .value-grid { grid-template-columns: 1fr; }
 }
+/* ─── CERTIFICATES ─── */
+.cert-group { margin-bottom: 16px; }
+.cert-group-label {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #888;
+  margin: 0 0 8px 0;
+}
+.cert-btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.cert-btn {
+  background: #f4f4f4;
+  border: 1.5px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 7px 14px;
+  font-size: 13px;
+  font-family: inherit;
+  font-weight: 500;
+  color: #1a1a1a;
+  cursor: pointer;
+  transition: background 0.18s, border-color 0.18s, color 0.18s;
+}
+.cert-btn:hover {
+  background: #1a6bff;
+  border-color: #1a6bff;
+  color: #fff;
+}
+
+/* ─── CERTIFICATE MODAL ─── */
+.cert-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 900;
+  backdrop-filter: blur(3px);
+}
+.cert-overlay.active { display: block; }
+
+.cert-modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0.96);
+  background: #fff;
+  border-radius: 16px;
+  padding: 32px 28px 28px;
+  z-index: 1000;
+  width: min(520px, 92vw);
+  box-shadow: 0 24px 60px rgba(0,0,0,0.22);
+  opacity: 0;
+  transition: transform 0.22s ease, opacity 0.22s ease;
+}
+.cert-modal.active {
+  display: block;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1);
+}
+.cert-modal-close {
+  position: absolute;
+  top: 14px;
+  right: 16px;
+  background: #f4f4f4;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #444;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.15s;
+}
+.cert-modal-close:hover { background: #e0e0e0; }
+.cert-modal-issuer {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1a6bff;
+  margin: 0 0 6px;
+}
+.cert-modal-title {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 18px;
+  color: #0a0a0a;
+}
+.cert-modal-img-wrap { position: relative; width: 100%; }
+.cert-modal-img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+  border: 1px solid #eee;
+}
+.cert-placeholder {
+  display: none;
+  width: 100%;
+  height: 220px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  border: 2px dashed #ddd;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  color: #aaa;
+  font-style: italic;
+}
