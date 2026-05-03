@@ -12,87 +12,6 @@
 </head>
 <body>
 
-  <!-- LOADING SCREEN -->
-  <div class="loader" id="loader">
-    <div class="loader-inner">
-      <span class="loader-logo">astra</span>
-      <div class="loader-bar-wrap"><div class="loader-bar"></div></div>
-    </div>
-  </div>
-
-  <!-- CERTIFICATE MODALS -->
-  <div class="cert-overlay" id="certOverlay" onclick="closeCert()"></div>
-
-  <div class="cert-modal" id="cert-tesda-agri">
-    <button class="cert-modal-close" onclick="closeCert()">✕</button>
-    <p class="cert-modal-issuer">TESDA Certificate</p>
-    <h3 class="cert-modal-title">Organic Agriculture Production</h3>
-    <div class="cert-modal-img-wrap">
-      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/OA%20-%20ncII" alt="Organic Agriculture Production Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="cert-placeholder">Certificate Image</div>
-    </div>
-  </div>
-
-  <div class="cert-modal" id="cert-tesda-msme">
-    <button class="cert-modal-close" onclick="closeCert()">✕</button>
-    <p class="cert-modal-issuer">TESDA Certificate</p>
-    <h3 class="cert-modal-title">Entrepreneurship (MSME)</h3>
-    <div class="cert-modal-img-wrap">
-      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Entrepreneurship" alt="Entrepreneurship MSME Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="cert-placeholder">Certificate Image</div>
-    </div>
-  </div>
-
-  <div class="cert-modal" id="cert-cisco-html">
-    <button class="cert-modal-close" onclick="closeCert()">✕</button>
-    <p class="cert-modal-issuer">Cisco Certificate</p>
-    <h3 class="cert-modal-title">HTML Essentials</h3>
-    <div class="cert-modal-img-wrap">
-      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/HTML%20Essentials" alt="HTML Essentials Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="cert-placeholder">Certificate Image</div>
-    </div>
-  </div>
-
-  <div class="cert-modal" id="cert-cisco-ai">
-    <button class="cert-modal-close" onclick="closeCert()">✕</button>
-    <p class="cert-modal-issuer">Cisco Certificate</p>
-    <h3 class="cert-modal-title">Introduction to Modern AI</h3>
-    <div class="cert-modal-img-wrap">
-      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Introduction%20to%20Modern%20AI" alt="Introduction to Modern AI Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="cert-placeholder">Certificate Image</div>
-    </div>
-  </div>
-
-  <div class="cert-modal" id="cert-cisco-net">
-    <button class="cert-modal-close" onclick="closeCert()">✕</button>
-    <p class="cert-modal-issuer">Cisco Certificate</p>
-    <h3 class="cert-modal-title">Networking Basics</h3>
-    <div class="cert-modal-img-wrap">
-      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Networking%20Basics" alt="Networking Basics Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="cert-placeholder">Certificate Image</div>
-    </div>
-  </div>
-
-  <div class="cert-modal" id="cert-cisco-cyber">
-    <button class="cert-modal-close" onclick="closeCert()">✕</button>
-    <p class="cert-modal-issuer">Cisco Certificate</p>
-    <h3 class="cert-modal-title">Introduction to Cybersecurity</h3>
-    <div class="cert-modal-img-wrap">
-      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Introduction%20to%20Cybersecurity" alt="Introduction to Cybersecurity Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="cert-placeholder">Certificate Image</div>
-    </div>
-  </div>
-
-  <div class="cert-modal" id="cert-cisco-hw">
-    <button class="cert-modal-close" onclick="closeCert()">✕</button>
-    <p class="cert-modal-issuer">Cisco Certificate</p>
-    <h3 class="cert-modal-title">Computer Hardware Basics</h3>
-    <div class="cert-modal-img-wrap">
-      <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Computer%20Hardware%20Basics" alt="Computer Hardware Basics Certificate" class="cert-modal-img" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'" />
-      <div class="cert-placeholder">Certificate Image</div>
-    </div>
-  </div>
-
   <!-- NAV -->
   <nav class="nav" id="nav">
     <div class="nav-inner container">
@@ -113,7 +32,7 @@
       <a href="#services" class="mobile-link">Services</a>
       <a href="#process" class="mobile-link">Process</a>
       <a href="#contact" class="mobile-link">Contact</a>
-      <a href="#contact" class="mobile-link cta-mobile">Get Started</a>
+      <a href="#contact" class="mobile-link cta-mobile">Get Started →</a>
     </div>
   </nav>
 
@@ -122,14 +41,12 @@
     <div class="hero-bg"></div>
     <div class="container hero-inner">
       <div class="hero-content reveal">
-        <span class="eyebrow">I am a <span class="typing-text" id="typingText"></span><span class="typing-cursor">|</span></span>
-        <h1 class="hero-name"><span class="hero-firstname">Jessrell M.</span><em>Custodio</em></h1>
+        <span class="eyebrow">Frontend Developer</span>
+        <h1 class="hero-name">Jessrell M.<br /><em>Custodio</em></h1>
         <div class="role-ticker">
           <span class="role-item active">Frontend Web Developer</span>
-          <span class="role-item">Arduino Developer</span>
           <span class="role-item">Web Designer</span>
-          <span class="role-item">Entrepreneur</span>
-          <span class="role-item">Agriculturist</span>
+          <span class="role-item">Arduino Developer</span>
         </div>
         <p class="hero-sub">I build fast, clean, and mobile-ready websites for real use.<br />Your business needs visibility — I help you get online fast.</p>
         <div class="hero-ctas">
@@ -165,6 +82,21 @@
     </div>
   </section>
 
+  <!-- HOOK -->
+  <section class="hook">
+    <div class="container">
+      <div class="hook-inner reveal">
+        <div class="hook-left">
+          <h2 class="hook-headline">No website means<br /><span>lost customers.</span></h2>
+        </div>
+        <div class="hook-right">
+          <p>People search online first. If they don't find you, they choose someone else.</p>
+          <p>I build simple websites that help people trust your business and contact you directly.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- MICROCOPY STRIP -->
   <div class="microcopy-strip">
     <div class="ticker-track">
@@ -192,44 +124,14 @@
     <div class="container about-grid">
       <div class="about-left reveal">
         <div class="about-avatar">
-          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Profile" alt="Jessrell M. Custodio" class="avatar-photo" />
-          <div class="avatar-badge">Jessrell Custodio</div>
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/profile-astra/Profile" alt="Jessrell M. Custodio" class="avatar-image" />
+          <div class="avatar-badge">Available for Projects</div>
         </div>
       </div>
       <div class="about-right reveal-right">
         <span class="section-label">About Me</span>
         <h2 class="section-title">I keep everything<br /><em>simple and working.</em></h2>
-
-        <!-- Introduction -->
-        <p class="about-intro">
-          I'm <strong>Jessrell M. Custodio</strong>, a BSIT student at
-          <strong>Mindoro State University</strong> with a strong focus on frontend
-          development and web design. My interest lies at the intersection of
-          entrepreneurship and technology — I build websites that help businesses
-          establish their presence and thrive in the digital era.
-        </p>
-
-        <!-- Background & Philosophy -->
-        <p class="about-detail">
-          I don't believe in overcomplicating things. A business doesn't need a
-          bloated system to succeed online — it needs a website that loads fast,
-          communicates clearly, and turns visitors into customers. That's what I
-          deliver: practical, results-focused web solutions built with clean code.
-        </p>
-
-        <!-- What I've Built -->
-        <div class="about-highlights">
-          <p class="builds-label">Projects I've built:</p>
-          <ul class="about-list">
-            <li>A fully functional e-commerce web application</li>
-            <li>Landing pages and business portfolio sites</li>
-            <li>A digital e-library platform</li>
-            <li>A real-time messaging web application</li>
-            <li>A fitness tracking web app</li>
-          </ul>
-        </div>
-
-        <!-- Who I Help -->
+        <p>I am a BSIT student focused on frontend development and design. You don't need complex systems — you need a clear website that loads fast and shows your service.</p>
         <div class="about-builds">
           <p class="builds-label">I build websites for:</p>
           <div class="tag-row">
@@ -238,108 +140,85 @@
             <span class="tag">Local Services</span>
           </div>
         </div>
-
-        <!-- Certificates -->
         <div class="about-background">
-          <p class="builds-label">Certificates</p>
-          <div class="cert-group">
-            <p class="cert-group-label">TESDA</p>
-            <div class="cert-btn-row">
-              <button class="cert-btn" onclick="openCert('tesda-agri')">Organic Agriculture Production</button>
-              <button class="cert-btn" onclick="openCert('tesda-msme')">Entrepreneurship (MSME)</button>
-            </div>
+          <p class="builds-label">Background in:</p>
+          <div class="tag-row">
+            <span class="tag alt">Organic Agriculture Production</span>
+            <span class="tag alt">MSME Operations</span>
           </div>
-          <div class="cert-group">
-            <p class="cert-group-label">Cisco</p>
-            <div class="cert-btn-row">
-              <button class="cert-btn" onclick="openCert('cisco-html')">HTML Essentials</button>
-              <button class="cert-btn" onclick="openCert('cisco-ai')">Introduction to Modern AI</button>
-              <button class="cert-btn" onclick="openCert('cisco-net')">Networking Basics</button>
-              <button class="cert-btn" onclick="openCert('cisco-cyber')">Introduction to Cybersecurity</button>
-              <button class="cert-btn" onclick="openCert('cisco-hw')">Computer Hardware Basics</button>
-            </div>
-          </div>
+          <p class="builds-note">This helps me understand small business needs on a deeper level.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SKILLS & TOOLS -->
-  <section class="skills-tools section-pad" id="skills">
-    <div class="container skills-tools-grid">
-      <div class="skills-col reveal">
-        <span class="section-label">Skills</span>
-        <h2 class="section-title">What I bring<br /><em>to every project.</em></h2>
-        <div class="skill-bars">
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Frontend Development</span>
-              <span class="skill-pct">85%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-fill" data-width="85"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Web Design</span>
-              <span class="skill-pct">80%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-fill" data-width="80"></div>
-            </div>
-          </div>
-          <div class="skill-item">
-            <div class="skill-header">
-              <span class="skill-name">Entrepreneurship</span>
-              <span class="skill-pct">80%</span>
-            </div>
-            <div class="skill-track">
-              <div class="skill-fill" data-width="80"></div>
-            </div>
-          </div>
+  <!-- VALUE SECTION -->
+  <section class="value section-pad">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">What You Get</span>
+        <h2 class="section-title centered">Everything you need.<br /><em>Nothing you don't.</em></h2>
+      </div>
+      <div class="value-grid reveal">
+        <div class="value-card">
+          <div class="value-icon">⚡</div>
+          <h3>Fast Loading</h3>
+          <p>Pages that load in seconds — keeping visitors from leaving.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">📱</div>
+          <h3>Mobile-Ready</h3>
+          <p>Looks perfect on every device — phone, tablet, or desktop.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">✦</div>
+          <h3>Clean Design</h3>
+          <p>A trusted presence that makes clients feel confident.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">💬</div>
+          <h3>Clear Content</h3>
+          <p>Your services, explained simply — so clients understand immediately.</p>
+        </div>
+        <div class="value-card">
+          <div class="value-icon">🔗</div>
+          <h3>Show Clients</h3>
+          <p>A website you can proudly share to any potential customer.</p>
         </div>
       </div>
-      <div class="tools-col reveal-right">
-        <span class="section-label">Tools</span>
-        <h2 class="section-title">My toolkit<br /><em>for every build.</em></h2>
-        <div class="tools-grid">
-          <div class="tool-card">
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13.51 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8.49L13.51 3Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M13 3v6h6" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9 13h6M9 17h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            </div>
-            <span>VS Code</span>
+    </div>
+  </section>
+
+  <!-- PROBLEM → SOLUTION -->
+  <section class="problem section-pad">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">The Real Problem</span>
+        <h2 class="section-title centered">Where businesses get stuck.<br /><em>How I fix it.</em></h2>
+      </div>
+      <div class="ps-grid reveal">
+        <div class="ps-col problem-col">
+          <div class="ps-header">
+            <span class="ps-badge red">❌ The Problem</span>
           </div>
-          <div class="tool-card">
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5Z" stroke="currentColor" stroke-width="1.8"/><path d="M8.5 19.5c.5-2 1.8-3.5 3.5-3.5s3 1.5 3.5 3.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            </div>
-            <span>GitHub</span>
+          <ul class="ps-list">
+            <li><span class="ps-icon red">✕</span>You don't have a website</li>
+            <li><span class="ps-icon red">✕</span>Your page looks outdated</li>
+            <li><span class="ps-icon red">✕</span>Customers keep asking the same basic questions</li>
+            <li><span class="ps-icon red">✕</span>No online presence means lost trust</li>
+          </ul>
+        </div>
+        <div class="ps-divider">→</div>
+        <div class="ps-col solution-col">
+          <div class="ps-header">
+            <span class="ps-badge green">✓ My Solution</span>
           </div>
-          <div class="tool-card">
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L2 7l10 5 10-5-10-5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M2 17l10 5 10-5M2 12l10 5 10-5" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
-            </div>
-            <span>Vercel / Render</span>
-          </div>
-          <div class="tool-card">
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.8"/><path d="M8 12h8M12 8v8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
-            </div>
-            <span>ImageKit</span>
-          </div>
-          <div class="tool-card">
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 5.5A2.5 2.5 0 0 1 7.5 3H12v5H7.5A2.5 2.5 0 0 1 5 5.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M12 3h4.5a2.5 2.5 0 0 1 0 5H12V3Z" stroke="currentColor" stroke-width="1.8"/><path d="M12 12.5a2.5 2.5 0 1 1 5 0 2.5 2.5 0 0 1-5 0Z" stroke="currentColor" stroke-width="1.8"/><path d="M5 12.5A2.5 2.5 0 0 1 7.5 10H12v5H7.5A2.5 2.5 0 0 1 5 12.5Z" stroke="currentColor" stroke-width="1.8"/><path d="M5 19.5A2.5 2.5 0 0 1 7.5 17H12v2.5A2.5 2.5 0 0 1 9.5 22h-2A2.5 2.5 0 0 1 5 19.5Z" stroke="currentColor" stroke-width="1.8"/></svg>
-            </div>
-            <span>Figma</span>
-          </div>
-          <div class="tool-card">
-            <div class="tool-icon">
-              <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/><path d="M12 8v4l3 3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <span>Canva</span>
-          </div>
+          <ul class="ps-list">
+            <li><span class="ps-icon green">✓</span>A website that shows your services clearly</li>
+            <li><span class="ps-icon green">✓</span>Answers the most common customer questions</li>
+            <li><span class="ps-icon green">✓</span>Makes it easy for clients to contact you</li>
+            <li><span class="ps-icon green">✓</span>Builds instant trust with every visitor</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -349,19 +228,25 @@
   <section class="services section-pad" id="services">
     <div class="container">
       <div class="reveal">
+        <span class="section-label">Services</span>
         <h2 class="section-title centered">Choose based on<br /><em>your needs and budget.</em></h2>
         <p class="section-sub centered">All websites are mobile-friendly, fast-loading, and cleanly designed.</p>
+      </div>
+
+      <div class="services-note reveal">
+        <span class="note-icon">💡</span>
+        <p><strong>Not sure what you need?</strong> Start with a simple page. Upgrade later.</p>
       </div>
 
       <!-- Use Cases -->
       <div class="use-cases reveal">
         <p class="use-label">Who needs a website?</p>
         <div class="use-grid">
-          <div class="use-item">Students building portfolios</div>
-          <div class="use-item">Small shop owners</div>
-          <div class="use-item">Freelancers offering services</div>
-          <div class="use-item">Event organizers</div>
-          <div class="use-item">Local service providers</div>
+          <div class="use-item"><span>🎓</span> Students building portfolios</div>
+          <div class="use-item"><span>🏪</span> Small shop owners</div>
+          <div class="use-item"><span>🛠</span> Freelancers offering services</div>
+          <div class="use-item"><span>📅</span> Event organizers</div>
+          <div class="use-item"><span>📍</span> Local service providers</div>
         </div>
         <p class="use-conclusion">If you want people to find you online — you need a website.</p>
       </div>
@@ -370,55 +255,164 @@
       <div class="service-cards reveal">
         <div class="service-card">
           <div class="service-tier">Starter</div>
-          <h3 class="service-name">Static Websites</h3>
-          <p class="service-desc">Clean and simple sites for quick launch. Good for personal pages and small services.</p>
+          <h3 class="service-name">Basic Page</h3>
+          <p class="service-desc">Perfect for getting online fast. One page with everything you need to start.</p>
           <ul class="service-features">
-            <li>✓ Free basic customization</li>
-            <li>✓ Single-page or multi-section layout</li>
-            <li>✓ Mobile-friendly design</li>
+            <li>✓ Single page design</li>
+            <li>✓ Contact section</li>
+            <li>✓ Mobile-friendly</li>
             <li>✓ Fast loading</li>
-            <li>✓ Contact section or info display</li>
-            <li>✓ 1 revision included</li>
-            <li>✓ Free deployment guide</li>
           </ul>
-          <div class="service-time">2–4 days</div>
+          <div class="service-time">⏱ 2–3 days</div>
           <a href="#contact" class="btn-service">Start Here</a>
         </div>
         <div class="service-card featured">
           <div class="featured-badge">Most Popular</div>
           <div class="service-tier">Standard</div>
-          <h3 class="service-name">Landing Pages / Microsites</h3>
-          <p class="service-desc">Built for marketing, promos, and getting leads.</p>
+          <h3 class="service-name">Business Site</h3>
+          <p class="service-desc">Multi-section website to showcase your full services and build trust.</p>
           <ul class="service-features">
-            <li>✓ Free full layout customization</li>
-            <li>✓ High-converting structure</li>
-            <li>✓ Call-to-action sections</li>
-            <li>✓ Forms (booking, signup, download)</li>
-            <li>✓ Mobile-optimized design</li>
-            <li>✓ 2 revisions included</li>
-            <li>✓ Basic SEO setup</li>
-            <li>✓ Free deployment support</li>
+            <li>✓ Multi-section layout</li>
+            <li>✓ Services section</li>
+            <li>✓ Contact form</li>
+            <li>✓ Image gallery</li>
+            <li>✓ Google Maps</li>
           </ul>
-          <div class="service-time">3–5 days</div>
+          <div class="service-time">⏱ 4–5 days</div>
           <a href="#contact" class="btn-service featured-btn">Get This</a>
         </div>
         <div class="service-card">
           <div class="service-tier">Premium</div>
-          <h3 class="service-name">Web Portals</h3>
-          <p class="service-desc">Full system with user access and advanced features.</p>
+          <h3 class="service-name">Full Portfolio</h3>
+          <p class="service-desc">Complete digital presence with all the extras for standing out.</p>
           <ul class="service-features">
-            <li>✓ Full customization based on your needs</li>
-            <li>✓ User login and dashboard</li>
-            <li>✓ Admin panel controls</li>
-            <li>✓ Database integration</li>
-            <li>✓ Custom features (booking, tracking, etc.)</li>
-            <li>✓ 3 revisions included</li>
-            <li>✓ Basic security setup</li>
+            <li>✓ Everything in Standard</li>
+            <li>✓ Social media links</li>
+            <li>✓ Custom navigation</li>
             <li>✓ Post-launch support</li>
-            <li>✓ Free deployment and setup</li>
+            <li>✓ Upgrade-ready</li>
           </ul>
-          <div class="service-time">5–10 days</div>
+          <div class="service-time">⏱ 5–7 days</div>
           <a href="#contact" class="btn-service">Let's Talk</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUST -->
+  <section class="trust section-pad">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">Why Clients Choose Me</span>
+        <h2 class="section-title centered">Results first.<br /><em>Design second.</em></h2>
+      </div>
+      <div class="trust-grid reveal">
+        <div class="trust-card">
+          <div class="trust-num">01</div>
+          <h3>I Respond Fast</h3>
+          <p>You get timely replies and updates throughout the entire build process.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-num">02</div>
+          <h3>Simple Pricing</h3>
+          <p>No hidden fees. No confusing packages. Transparent and fair pricing every time.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-num">03</div>
+          <h3>Clear Explanations</h3>
+          <p>I explain things in plain language — no technical jargon, no confusion.</p>
+        </div>
+        <div class="trust-card">
+          <div class="trust-num">04</div>
+          <h3>Focus on Results</h3>
+          <p>A pretty website means nothing if it doesn't get you clients. I focus on both.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES INCLUDED -->
+  <section class="features section-pad">
+    <div class="container">
+      <div class="features-inner reveal">
+        <div class="features-left">
+          <span class="section-label">What's Included</span>
+          <h2 class="section-title">Every website<br /><em>comes with:</em></h2>
+          <ul class="features-list">
+            <li><span class="f-check">✓</span> Clear homepage</li>
+            <li><span class="f-check">✓</span> Service or product section</li>
+            <li><span class="f-check">✓</span> Contact details</li>
+            <li><span class="f-check">✓</span> Mobile-friendly layout</li>
+            <li><span class="f-check">✓</span> Fast loading speed</li>
+            <li><span class="f-check">✓</span> Simple navigation</li>
+          </ul>
+          <div class="features-optional">
+            <p class="opt-label">Optional add-ons:</p>
+            <div class="opt-tags">
+              <span class="opt-tag">Image Gallery</span>
+              <span class="opt-tag">Google Maps</span>
+              <span class="opt-tag">Social Media Links</span>
+            </div>
+          </div>
+        </div>
+        <div class="features-right">
+          <div class="features-visual">
+            <div class="fv-item">
+              <div class="fv-dot"></div>
+              <div class="fv-bar" style="width:85%"></div>
+              <span>Frontend Development</span>
+            </div>
+            <div class="fv-item">
+              <div class="fv-dot"></div>
+              <div class="fv-bar" style="width:80%"></div>
+              <span>Web Design</span>
+            </div>
+            <div class="fv-item">
+              <div class="fv-dot"></div>
+              <div class="fv-bar" style="width:90%"></div>
+              <span>Entrepreneurship</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="tools section-pad">
+    <div class="container">
+      <div class="reveal">
+        <span class="section-label">My Tools</span>
+        <h2 class="section-title centered">Technologies & platforms<br /><em>I use daily.</em></h2>
+      </div>
+      <div class="tools-grid reveal">
+        <div class="tool-card">
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/tools/vscode.svg" alt="Visual Studio Code" class="tool-icon" />
+          <span>VS Code</span>
+        </div>
+        <div class="tool-card">
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/tools/github.svg" alt="GitHub" class="tool-icon" />
+          <span>GitHub</span>
+        </div>
+        <div class="tool-card">
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/tools/vercel.svg" alt="Vercel" class="tool-icon" />
+          <span>Vercel</span>
+        </div>
+        <div class="tool-card">
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/tools/render.svg" alt="Render" class="tool-icon" />
+          <span>Render</span>
+        </div>
+        <div class="tool-card">
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/tools/imagekit.svg" alt="ImageKit" class="tool-icon" />
+          <span>ImageKit</span>
+        </div>
+        <div class="tool-card">
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/tools/figma.svg" alt="Figma" class="tool-icon" />
+          <span>Figma</span>
+        </div>
+        <div class="tool-card">
+          <img src="https://ik.imagekit.io/0sf7uub8b/Sources/tools/canva.svg" alt="Canva" class="tool-icon" />
+          <span>Canva</span>
         </div>
       </div>
     </div>
@@ -428,6 +422,7 @@
   <section class="process section-pad" id="process">
     <div class="container">
       <div class="reveal">
+        <span class="section-label">How It Works</span>
         <h2 class="section-title centered">From idea to live<br /><em>in days — not weeks.</em></h2>
       </div>
       <div class="process-steps reveal">
@@ -467,7 +462,7 @@
           <div class="step-number">05</div>
           <div class="step-content">
             <h3>Launch</h3>
-            <p>Your website goes live. People can find you online.</p>
+            <p>Your website goes live.</p>
           </div>
         </div>
       </div>
@@ -479,11 +474,13 @@
     <div class="container">
       <div class="sb-grid reveal">
         <div class="sb-card speed-card">
+          <div class="sb-icon">⚡</div>
           <h3>Fast Turnaround</h3>
           <div class="sb-stat">2–7 <span>days</span></div>
           <p>Most projects are done in less than a week. You get updates during the entire process so you're never in the dark.</p>
         </div>
         <div class="sb-card budget-card">
+          <div class="sb-icon">💰</div>
           <h3>Affordable Pricing</h3>
           <div class="sb-stat">Fair <span>rates</span></div>
           <p>Perfect for students, startups, and small businesses. You don't need a big budget to get online and start growing.</p>
@@ -503,10 +500,47 @@
     </div>
   </section>
 
+  <!-- FUTURE SUPPORT -->
+  <section class="support section-pad">
+    <div class="container">
+      <div class="support-inner reveal">
+        <div class="support-left">
+          <span class="section-label">After Launch</span>
+          <h2 class="section-title">Your website grows<br /><em>with you.</em></h2>
+          <p>Going live is just the beginning. I'm here for what comes next.</p>
+        </div>
+        <div class="support-right">
+          <div class="support-item">
+            <div class="support-dot">→</div>
+            <div>
+              <h4>Request Updates</h4>
+              <p>Need to change something? I've got you covered after launch.</p>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="support-dot">→</div>
+            <div>
+              <h4>Add New Sections</h4>
+              <p>Expanding your business? Add new pages or sections anytime.</p>
+            </div>
+          </div>
+          <div class="support-item">
+            <div class="support-dot">→</div>
+            <div>
+              <h4>Upgrade Anytime</h4>
+              <p>Start simple. When you're ready, upgrade to a bigger, better site.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <!-- FINAL CTA -->
   <section class="final-cta" id="contact">
     <div class="container">
       <div class="cta-inner reveal">
+        <span class="section-label light">Start Now</span>
         <h2 class="cta-headline">Message me today.<br /><em>Get online in days.</em></h2>
         <p class="cta-sub">Send your idea. I will turn it into a working page.</p>
         <div class="cta-actions">
@@ -536,24 +570,11 @@
           <a href="#process">Process</a>
           <a href="#contact">Contact</a>
         </nav>
-        <p class="footer-copy">© 2025 Astra. All rights reserved.</p>
+        <p class="footer-copy">© 2025 Jessrell M. Custodio. All rights reserved.</p>
       </div>
     </div>
   </footer>
 
   <script src="script.js"></script>
-  <script>
-    function openCert(id) {
-      document.getElementById('certOverlay').classList.add('active');
-      document.getElementById('cert-' + id).classList.add('active');
-      document.body.style.overflow = 'hidden';
-    }
-    function closeCert() {
-      document.getElementById('certOverlay').classList.remove('active');
-      document.querySelectorAll('.cert-modal').forEach(function(m) { m.classList.remove('active'); });
-      document.body.style.overflow = '';
-    }
-    document.addEventListener('keydown', function(e) { if (e.key === 'Escape') closeCert(); });
-  </script>
 </body>
 </html>
